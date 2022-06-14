@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CodeEditor from "@uiw/react-textarea-code-editor";
 import { SQLContext } from "../Store";
 import Dolfin from "../dolfin.svg";
@@ -6,8 +6,11 @@ import Down from "../dowm.svg";
 const SqlEditor = () => {
   const { query, setQuery } = useContext(SQLContext);
   const [state, setState] = useState(true);
-  const [input, setInput] = useState(query);
+  const [input, setInput] = useState("");
 
+  useEffect(() => {
+    setInput(query);
+  }, [query]);
   return (
     <>
       <div className="editor">
@@ -21,7 +24,6 @@ const SqlEditor = () => {
               className="b1"
               onClick={() => {
                 setQuery(input);
-                setInput(query);
               }}
             >
               Run
