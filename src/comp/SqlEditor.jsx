@@ -51,7 +51,7 @@ const SqlEditor = () => {
           <CodeEditor
             value={query}
             language="sql"
-            placeholder="only supports SELECT * querys"
+            placeholder="Enter querys here"
             onChange={(evn) => setInput(evn.target.value)}
             className="code"
             padding={15}
