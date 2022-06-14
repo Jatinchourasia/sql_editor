@@ -4,7 +4,7 @@
 
 Visit Here [sql-editor-tawny.vercel.app](https://sql-editor-tawny.vercel.app/).
 
-# b. abioove application is build using Create-react-app
+# b. above application is build using Create-react-app
 
 # c. page load time , measured using lighthouse
 
