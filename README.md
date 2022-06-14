@@ -8,6 +8,10 @@ Visit Here [sql-editor-tawny.vercel.app](https://sql-editor-tawny.vercel.app/).
 
 # c. page load time , measured using lighthouse
 
+![performance](https://user-images.githubusercontent.com/69300666/173539119-062f1f2e-f42a-4921-87ba-ae1ce32d9c96.png)
+
+![matrix](https://user-images.githubusercontent.com/69300666/173539131-f2b4e57c-5bcb-48d3-8384-cbb81a895541.png)
+
 # d. optimisation
 
 used Code splitting using Suspense and lazy, to implement lazy loading
