@@ -63,6 +63,10 @@ const SqlEditor = () => {
             }}
           />
         </div>
+        <i>
+          Note: supported database are
+          categories,customers,employee_territories,orders,suppliers,territories
+        </i>
       </div>
     </>
   );
