@@ -91,7 +91,7 @@ tr:hover {
   border-radius: 0 0 8px 8px;
   background: #d0ffc9;
   width: 100%;
-  height: 0vh;
+  height: 20vh;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
@@ -150,10 +150,10 @@ tr:hover {
   border-radius: 8px 8px 0 0;
   padding: 0;
 }
-
-ul {
-  list-style: none;
+.outputNav h2 {
+  margin-left: 1rem;
 }
+
 .dbInfo p {
   text-align: left;
   background-color: #121b2e;
@@ -236,6 +236,8 @@ ul {
 }
 
 .drop {
+  height: 1.5rem;
+  width: 1.5rem;
   cursor: pointer;
 }
 
@@ -263,8 +265,10 @@ ul {
   }
 }
 .logo {
-  transform: scale(1.5);
   margin-right: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+  transform: scale(1.4);
 }
 
 button {

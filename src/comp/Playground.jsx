@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 
 import { QuickAccess } from "./QuickAccess";
-import { SqlEditor } from "./SqlEditor";
+const SqlEditor = lazy(() => import("./SqlEditor"));
 
 const DatabaseInfo = lazy(() => import("./DatabaseInfo"));
 const Output = lazy(() => import("./Output"));
@@ -20,7 +20,9 @@ const Playground = () => {
       </div>
 
       <div className="right">
-        <SqlEditor />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SqlEditor />
+        </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
           <Output />
         </Suspense>

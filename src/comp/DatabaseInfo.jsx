@@ -6,7 +6,7 @@ const DatabaseInfo = () => {
 
   return (
     <>
-      <h2>DatabaseInfo</h2>
+      <h2>Database columns</h2>
 
       <div className="dbInfo">
         {columns &&

@@ -4,9 +4,10 @@ const SQLContext = createContext();
 
 const ContextProvider = ({ children }) => {
   const [data, setData] = useState("");
-  const [query, setQuery] = useState("SELECT * from customers");
+  const [query, setQuery] = useState("");
   const [toggel, setToggel] = useState(true);
   const [columns, setColumns] = useState("");
+  const [code, setCode] = useState("");
 
   return (
     <SQLContext.Provider
@@ -19,6 +20,8 @@ const ContextProvider = ({ children }) => {
         setToggel,
         columns,
         setColumns,
+        code,
+        setCode,
       }}
     >
       {children}

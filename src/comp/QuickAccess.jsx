@@ -17,7 +17,7 @@ export const QuickAccess = () => {
 
       <div className="quick">
         {Querys.map((val, i) => (
-          <li className="li" key={i} onClick={() => setQuery(val)}>
+          <div className="li" key={i} onClick={() => setQuery(val)}>
             <CodeEditor
               value={val}
               language="sql"
@@ -33,7 +33,7 @@ export const QuickAccess = () => {
                   "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
               }}
             />
-          </li>
+          </div>
         ))}
       </div>
     </>

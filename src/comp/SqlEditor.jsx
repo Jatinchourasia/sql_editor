@@ -3,7 +3,7 @@ import CodeEditor from "@uiw/react-textarea-code-editor";
 import { SQLContext } from "../Store";
 import Dolfin from "../dolfin.svg";
 import Down from "../dowm.svg";
-export const SqlEditor = () => {
+const SqlEditor = () => {
   const { query, setQuery } = useContext(SQLContext);
   const [state, setState] = useState(true);
   const [input, setInput] = useState(query);
@@ -13,12 +13,17 @@ export const SqlEditor = () => {
       <div className="editor">
         <div className={`editorNav ${state && "border"}`}>
           <h2>
-            {" "}
-            <img src={Dolfin} className="logo" />
+            <img src={Dolfin} alt="logo" className="logo" />
             SQL
           </h2>
           <div className="control">
-            <button className="b1" onClick={() => setQuery(input)}>
+            <button
+              className="b1"
+              onClick={() => {
+                setQuery(input);
+                setInput(query);
+              }}
+            >
               Run
             </button>
             <button
@@ -33,6 +38,7 @@ export const SqlEditor = () => {
             <img
               className={`drop ${state ? "up" : "down"}`}
               src={Down}
+              alt="down"
               onClick={() => {
                 setState(!state);
               }}
@@ -59,3 +65,5 @@ export const SqlEditor = () => {
     </>
   );
 };
+
+export default SqlEditor;

@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Result = ({ data }) => {
-  // console.log("dhfjklshdfjhsdjhj", data);
   return (
     <>
       {data && (

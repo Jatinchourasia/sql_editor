@@ -20,17 +20,19 @@ const Output = () => {
     return null;
   }
   useEffect(() => {
-    let target = query.substring(
-      query.indexOf("SELECT") + 7,
-      query.indexOf("from") - 1
-    );
-    let db = query.substring(query.indexOf("from") + 5);
-    getData(db)
-      .then((val) => {
-        setData(search(CSVToJSON(val.replace("\n", "")), target));
-        setColumns(Object.keys(CSVToJSON(val.replace("\n", ""))[0]));
-      })
-      .catch(setData(""));
+    if (query) {
+      let target = query.substring(
+        query.indexOf("SELECT") + 7,
+        query.indexOf("from") - 1
+      );
+      let db = query.substring(query.indexOf("from") + 5);
+      getData(db)
+        .then((val) => {
+          setData(search(CSVToJSON(val.replace("\n", "")), target));
+          setColumns(Object.keys(CSVToJSON(val.replace("\n", ""))[0]));
+        })
+        .catch(setData(""));
+    }
   }, [query]);
   return (
     <>
@@ -43,7 +45,7 @@ const Output = () => {
             <Result data={data} />
           ) : (
             <div className="warning">
-              <h2>Invalid Query Request</h2>
+              <p>Invalid Query Request</p>
             </div>
           )}
         </div>
