@@ -277,12 +277,12 @@ button {
   cursor: pointer;
 }
 .b1 {
-  background-color: #11ba24;
+  background-color: #079518;
   color: white;
   font-size: 16px;
 }
 .b2 {
-  background-color: red;
+  background-color: rgb(171, 0, 0);
   color: white;
   font-size: 16px;
 }
