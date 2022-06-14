@@ -13,7 +13,7 @@ export const QuickAccess = () => {
   ];
   return (
     <>
-      <h2>QuickAccess</h2>
+      <p>QuickAccess</p>
 
       <div className="quick">
         {Querys.map((val, i) => (
