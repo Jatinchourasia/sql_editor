@@ -1,6 +1,7 @@
 
 # a. Basic overview
 # Sql_Editor it can run SELECT * and  SELECT oneColumn querys
+vidoe [link](https://www.loom.com/share/ce21ff6a37354a9da1d6db446e5a37c8)
 
 Visit Here [sql-editor-tawny.vercel.app](https://sql-editor-tawny.vercel.app/).
 
