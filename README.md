@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Sql_edito task for atlan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit [Here](sql-editor-tawny.vercel.app).
 
 ## Available Scripts
 
